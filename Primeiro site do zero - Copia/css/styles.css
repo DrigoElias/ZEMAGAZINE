@@ -1,0 +1,286 @@
+body {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+}
+
+.menu-principal {
+    width: 100%;
+    background-color: blueviolet;
+    height: 130px;
+}
+
+main,
+.content {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.logo {
+    float: right;
+    width: 140%;
+}
+
+.redes-sociais ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+
+.redes-sociais {
+    width: 23%;
+    float: right;
+    padding: 15px;
+}
+
+.header-2 {
+    color: aliceblue;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+}
+
+.menu-urls {
+    border-bottom: 1px solid antiquewhite;
+    height: 95px;
+    display: flex;
+}
+
+.menu ul li {
+    display: inline-block;
+    color: gray;
+    margin-left: 5px;
+    padding: 20px;
+    height: 38px;
+}
+
+.menu ul li:hover {
+    border-bottom: 1px solid purple;
+}
+
+.menu ul li a:hover {
+    color: purple;
+}
+
+.menu ul li a {
+    color: gray;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.menu {
+    width: 50%;
+    float: left;
+}
+
+.busca {
+    float: right;
+    width: 10%;
+    text-align: center;
+}
+
+.busca input {
+    background-image: url(../img/lupa.png);
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 15px;
+    height: 10px;
+    width: 240px;
+    background-position: 95%;
+    border: 1px solid lightslategray;
+}
+
+
+.col-100 {
+    width: 100%;
+    float: left;
+}
+
+
+button.slick-prev {
+    background-image: url(../img/seta-esquerda.png);
+    font-size: 0px;
+    border: none;
+    height: 51px;
+    width: 25px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 35%;
+    left: 14%;
+
+}
+
+button.slick-next {
+    background-image: url(../img/seta-direita.png);
+    font-size: 0px;
+    border: none;
+    height: 51px;
+    width: 25px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 9;
+    top: 35%;
+    right: 14%;
+    text-align: center;
+}
+
+ul.slick-dots li {
+    list-style: none;
+    float: left;
+    width: 20px;
+    position: relative;
+    left: 47%;
+    top: -15px;
+}
+
+ul.slick-dots li button {
+    font-size: 0px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 10px;
+    height: 13px;
+}
+
+ul.slick-dots li.slick-active button {
+    background-color: purple;
+}
+.footer {
+    background-image: url('../img/footer.png');
+    color: #ffffff;
+}
+
+.footer p {
+    width: 90%;
+    text-align: left;
+}
+
+.footer-2 p {
+    padding: 10px;
+}
+.local:before, .emailico:before, .telefoneico:before {
+    content: '';
+    width:  17px;
+    height: 24px;
+    float: left;
+    background-repeat: no-repeat;
+    padding-left: 5px;
+}
+.local:before {
+    background-image: url('../img/local.png');
+}  
+.emailico:before {
+    background-image: url('../img/email.png');
+}  
+.telefoneico:before {
+    background-image: url('../img/telefoneico.png');
+}  
+
+.content{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:italic;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+  .row {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: inline-end;
+    margin-left: 100px;
+    margin-top: 150px;
+  }
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 60px;
+    width: 225px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    float: center !important;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: #a3a5ae;
+    font-size: 16px;
+  }
+   
+  .image {
+    float: center;
+    max-width: 64px;
+    max-height: 64px;
+  }
+  .blue {
+    border-left: 3px solid #4895ff;
+  }
+   
+  .green {
+    border-left: 3px solid #3bb54a;
+  }
+   
+  .red {
+    border-left: 3px solid #b3404a;
+  }
+.text{
+    margin-top: 100px;
+    margin: 100px;
+}
+
+h1{
+    margin-top: 300px;
+}
+
+@media screen and (max-width:768px) {
+    .row{
+        width: 100%;
+        flex-direction: column;
+        float: center;
+        margin-left: -15px;
+    }
+    
+}
+.float-whatsapp {
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    font-size: 16px;
+}
+
+.float-whatsapp.float-on {
+  position: fixed;
+}
+
+.float-whatsapp a {
+    background: #008617;
+    padding: 20px 20px 20px 15px;
+    border-radius: 100px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.float-whatsapp svg {
+    height: 16px;
+    margin-bottom: -2px;
+}
+.float-whatsapp-text{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
